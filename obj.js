@@ -2,13 +2,19 @@
 
 /*
  * Create an object `obj` that has a property for each primitive values
- * much like in primitive.js
+ * much like in prmitive.js
  *
  * @notions Functions, Operators
  * @next circular
  */
 
 // Your code :
+const obj = {
+  str: '1337',
+  num: 42,
+  bool: false,
+  undef: undefined
+}
 
 //* Begin of tests
 const assert = require('assert')

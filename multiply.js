@@ -10,6 +10,19 @@
  */
 
 // Your code :
+const multiply = (a, b) => {
+  let count = 0
+  let resultat = 0
+
+  while (count < Math.abs(b)) {
+    resultat = resultat + Math.abs(a)
+    count++
+  }
+
+  resultat = Math.sign(a) === Math.sign(b) ? resultat : -resultat
+
+  return resultat
+}
 
 //* Begin of tests
 const assert = require('assert')
@@ -19,6 +32,7 @@ assert.strictEqual(multiply.length, 2)
 assert.strictEqual(multiply.toString().includes('Math.imul'), false)
 assert.strictEqual(multiply.toString().includes('*'), false)
 assert.strictEqual(multiply.toString().includes('/'), false)
+assert.strictEqual(multiply.toString().includes('*'), false)
 assert.strictEqual(multiply(34, 78), 2652)
 assert.strictEqual(multiply(123, 0), 0)
 assert.strictEqual(multiply(0, -230), 0)

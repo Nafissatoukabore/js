@@ -8,6 +8,9 @@
  */
 
 // Your code :
+const a = 4
+const b = 4
+const add = (a, b) => a + b
 
 //* Begin of tests
 const assert = require('assert')

@@ -9,7 +9,7 @@
  */
 
 // Your code :
-
+const getLength = taille => taille.length
 //* Begin of tests
 const assert = require('assert')
 
