@@ -10,6 +10,19 @@
  */
 
 //* Begin of tests
+const repeat = (a, b) => {
+  let count = 1
+  let resultat = ''
+
+  while (count <= b) {
+    resultat = a + resultat
+    count++
+  }
+
+  return resultat
+}
+
+console.log(repeat('ma fille            ', 5))
 const assert = require('assert')
 
 assert.strictEqual(typeof repeat, 'function')
